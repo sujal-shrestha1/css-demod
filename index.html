@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                   initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMW</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">BMW</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="card-container">
+        <div class="card">
+            <img src="BMW 8 Series.png" alt="Card 1">
+            <h3>Card Title 1</h3>
+            <p>BMW 8 Series</p>
+        </div>
+        <div class="card">
+            <img src="BMW i5 M60.png" alt="Card 2">
+            <h3>Card Title 2</h3>
+            <p>BMW i5 M60</p>
+        </div>
+        <div class="card">
+            <img src="BMW M2.png" alt="Card 3">
+            <h3>Card Title 3</h3>
+            <p>BMW M2</p>
+        </div>
+        <div class="card">
+            <img src="BMW X6.png" alt="Card 4">
+            <h3>Card Title 4</h3>
+            <p>BMW X6</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
